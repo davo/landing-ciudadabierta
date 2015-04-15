@@ -1,62 +1,113 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 @import "../public/components/bourbon/dist/_bourbon.scss";
-@import "../public/components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
-@import "../public/components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "onepage-scroll.css";
 @include font-face('Gotham', 'fonts/gotham');
 //tamaños de dispositivos
 $screen-xs: 480px !default; // telefonos
 $screen-sm: 768px !default; //tablet
 $screen-md: 992px !default; //desktop
-$fontset-gotham: "Gotham","Helvetica Neue",Helvetica,Arial,sans-serif !default;
-$fontset-openSans: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif !default;
+$fontset-gotham: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$fontset-openSans: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
 html,
 body {
+    width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    text-rendering: optimizeLegibility;
 }
 
 
-//cabecera GOB
-header {
-    pointer-events: none;
-    position: relative;
-    top: 0px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 999;
-    font-family: $fontset-gotham;
-    background: none repeat scroll 0 0 #ffd300;
-    .navbar {
-        margin: 0px;
+video#bgvid {
+    right: 0; bottom: 0; 
+    min-width: 100%; min-height: 100%;
+    width: auto; height: 100%;
+    background: url(../video/video.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-device-width: 800px) { //los dispositivos moviles no funcan bien con el video.
+    #bgvid {
+        display: none;
+     }
+}
+
+#landing{
+    background: url(img/landing.jpg) center center no-repeat;     
+    background-size: cover;
+    color: #FFFFFF;
+    .centro {
+        box-sizing: border-box;
+        z-index: 100;
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            background: url("img/logo-ciudad_abierta.png") center center no-repeat;
+        }
+
     }
-    .header-gcba {
-        height: 35px;
-        padding: 10px 0;
-        overflow: visible;
-    }
-    .header-inner {
-        padding-right: 20px;
-        padding-left: 20px
-    }
-    .header-gcba .logo {
+
+}
+#section01{
+    background: url(img/page01.jpg) center center no-repeat;     
+    background-size: cover;
+}
+#section02{
+    background: url(img/page02.jpg) center center no-repeat;     
+    background-size: cover;
+}
+
+#section05{
+    background: url(img/page05.jpg) center center no-repeat;     
+    background-size: cover;
+}
+
+.headerLogos {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    .izquierda {
         float: left;
-        width: 172px;
-        height: 33px;
-        @include retina-image("img/logo-normal", 172px 34px);
-        background-repeat: no-repeat;
-        background-size: 100%;
+        text-align: left;
+        padding: 30px;
+        width: 100px;
     }
-    .header-gcba h2.slogan {
+    .centro {
+        margin: 0 auto;
+        width: 100px;
+        text-align: center;
+        padding: 30px;
+    }
+    .derecha {
         float: right;
-        font-weight: bold;
-        margin-top: 0.7em;
-        font-size: 0.9em;
-        color: #000000;
-        text-transform: uppercase;
-        min-width: 150px;
+        text-align: right;
+        padding: 30px;
+        width: 100px;
     }
+}
+
+.formaGrandeArriba{ 
+    border-left: 54px solid transparent;
+    border-top: 100vh solid #fff;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    filter: drop-shadow;
+}
+
+.formaChicaArriba{ 
+    border-left: 54px solid transparent;
+    border-bottom: 100vh solid #fff;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    filter: drop-shadow;
 }
