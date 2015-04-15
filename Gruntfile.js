@@ -50,5 +50,4 @@ module.exports = function (grunt) {
 
     //Register tasks
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('deploy', ['cssmin', 'uglify']);
 };
