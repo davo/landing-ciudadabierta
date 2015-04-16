@@ -236,7 +236,7 @@ body {
 
 .registrate {
   z-index: 999;
-  background-color: #33bdef;
+  background-color: #4d405c;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
@@ -250,7 +250,7 @@ body {
   text-decoration: none; }
 
 .registrate:hover {
-  background-color: #019ad2; }
+  background-color: #000000; }
 
 .registrate:active {
   position: relative;
