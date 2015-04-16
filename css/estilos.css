@@ -10,6 +10,13 @@
   src: url('fonts/gotham.eot');
   src: url('fonts/gotham.eot?#iefix') format('embedded-opentype'), url('fonts/gotham.woff') format('woff'), url('fonts/gotham.ttf') format('truetype'), url('fonts/gotham.svg#Gotham') format('svg'); }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: url('fonts/OpenSans.eot');
+  src: url('fonts/OpenSans.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans.woff') format('woff'), url('fonts/OpenSans.ttf') format('truetype'), url('fonts/OpenSans.svg#Open Sans') format('svg'); }
+
 html, body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

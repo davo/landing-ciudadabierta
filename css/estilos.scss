@@ -4,6 +4,7 @@
 @import "animate.min.css";
 @import "onepage-scroll.css";
 @include font-face('Gotham', 'fonts/gotham');
+@include font-face('Open Sans', 'fonts/OpenSans');
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 //tamaños de dispositivos
 $screen-xs: 480px !default; // telefonos
