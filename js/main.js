@@ -104,3 +104,23 @@ function closeAll() {
    document.getElementById(divNum[i]).style.display = "none";
  }
 }
+
+
+//CAPS LOCK FOR CRUISE CONTROL
+$(document).ready(function() {
+    var ee = 'cheez';
+    var eel = ee.length;
+    var kh = '';
+    var m;
+        $(document).keypress(function(e) {
+            kh += String.fromCharCode(e.which)
+            m = kh.match(ee); 
+            if(m) {
+                $('<div id="cat"> s </div>').appendTo('body');
+                setTimeout(function(){$("#cat").remove();}, 500);
+                kh = m = '';
+            } else if (kh.length > 30) {
+                kh = kh.substr((kh.length - eel - 1));
+            }
+        });
+});
