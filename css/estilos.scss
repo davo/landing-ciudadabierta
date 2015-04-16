@@ -363,6 +363,19 @@ body {
     }
 }
 
+#footer {
+    background-color: #333;
+    bottom: 0;
+    clear: both;
+    color: #fff;
+    font-size: 0.8em;
+    height: 40px;
+    line-height: 3em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+}
 
 #cat{
     position: absolute;
