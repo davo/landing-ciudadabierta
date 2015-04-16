@@ -16,8 +16,25 @@ body {
 }
 
 
+<<<<<<< HEAD
+=======
+video#bgvid {
+    right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: 100%;
+    background: url(../video/video.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-device-width: 800px) { //los dispositivos moviles no funcan bien con el video.
+    #bgvid {
+        display: none;
+     }
+}
+
+>>>>>>> 1f1f5533316b76bbb854ef508c82e3abeb949bb4
 #landing{
-    background: url(img/landing.jpg) center center no-repeat;     
+    background: url(img/landing.jpg) center center no-repeat;
     background-size: cover;
     color: #FFFFFF;
     .centro {
@@ -38,16 +55,16 @@ body {
 
 }
 #section01{
-    background: url(img/page01.jpg) center center no-repeat;     
+    background: url(img/page01.jpg) -250px center/cover no-repeat;
     background-size: cover;
 }
 #section02{
-    background: url(img/page02.jpg) center center no-repeat;     
+    background: url(img/page02.jpg) center center no-repeat;
     background-size: cover;
 }
 
 #section05{
-    background: url(img/page05.jpg) center center no-repeat;     
+    background: url(img/page05.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -77,6 +94,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 .avanzar {
     position: absolute;
     right: 0px;
@@ -97,6 +115,10 @@ body {
 
 .formaGrandeArriba{ 
     border-left: 100px solid transparent;
+=======
+.formaGrandeArriba{
+    border-left: 200px solid transparent;
+>>>>>>> 1f1f5533316b76bbb854ef508c82e3abeb949bb4
     border-top: 100vh solid #fff;
     height: 100%;
     position: absolute;
@@ -106,8 +128,13 @@ body {
     z-index: 0;
 }
 
+<<<<<<< HEAD
 .formaChicaArriba{ 
     border-left: 100px solid transparent;
+=======
+.formaChicaArriba{
+    border-left: 200px solid transparent;
+>>>>>>> 1f1f5533316b76bbb854ef508c82e3abeb949bb4
     border-bottom: 100vh solid #fff;
     height: 100%;
     position: absolute;
