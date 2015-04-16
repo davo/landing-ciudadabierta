@@ -4,12 +4,15 @@
 @import "animate.min.css";
 @import "onepage-scroll.css";
 @include font-face('Gotham', 'fonts/gotham');
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 //tamaños de dispositivos
 $screen-xs: 480px !default; // telefonos
 $screen-sm: 768px !default; //tablet
 $screen-md: 992px !default; //desktop
 $fontset-gotham: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $fontset-openSans: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$fontset-montserrat: "Montserrat","Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
 
 html,
 body {
@@ -98,7 +101,7 @@ body {
 
 #section04{
     z-index: 999;
-    
+
 }
 
 #section05{
@@ -188,8 +191,9 @@ body {
             display: none;
         }
     }
-    .claim {
-
+    .claim h3 {
+        font-family: $fontset-gotham;
+        font-size: 1em;
     }
 }
 
@@ -218,16 +222,16 @@ body {
     width: 100%;
     .derecha{
         text-align: right;
-    }       
+    }
     .centro{
         text-align: center;
-    }       
+    }
     .wrapper{
         height: 100%;
         width: 100%;
-        padding: 20px;        
+        padding: 20px;
         display: table-cell;
-        vertical-align: middle;        
+        vertical-align: middle;
         .mitad{
             margin-left: 20%;
             width:80%;
@@ -312,7 +316,7 @@ body {
         .camp{
             background-color: #4d405c;
         }
-        
+
         .hack{
             background-color: #2e363b;
         }

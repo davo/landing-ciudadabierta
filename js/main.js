@@ -108,7 +108,7 @@ function closeAll() {
 
 //CAPS LOCK FOR CRUISE CONTROL
 $(document).ready(function() {
-    var ee = 'cheez';
+    var ee = 'labgcba';
     var eel = ee.length;
     var kh = '';
     var m;
@@ -116,7 +116,7 @@ $(document).ready(function() {
             kh += String.fromCharCode(e.which)
             m = kh.match(ee); 
             if(m) {
-                $('<div id="cat"> s </div>').appendTo('body');
+                $('<div id="cat"></div>').appendTo('body');
                 setTimeout(function(){$("#cat").remove();}, 500);
                 kh = m = '';
             } else if (kh.length > 30) {
