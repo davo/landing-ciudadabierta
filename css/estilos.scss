@@ -31,6 +31,7 @@ body {
             right: 0;
             margin: auto;
             width: 100%;
+            @include retina-image(logo-ciudad_abierta, 806px 65px);
             background: url("img/logo-ciudad_abierta.png") center center no-repeat;
         }
     }
@@ -105,7 +106,7 @@ body {
     z-index: 0;
 }
 
-.formaChicaArriba{ 
+.formaChicaArriba{
     border-left: 200px solid transparent;
     border-bottom: 100vh solid #fff;
     height: 100%;
