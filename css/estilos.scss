@@ -16,23 +16,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-=======
-video#bgvid {
-    right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: 100%;
-    background: url(../video/video.jpg) center center no-repeat;
-    background-size: cover;
-}
-
-@media screen and (max-device-width: 800px) { //los dispositivos moviles no funcan bien con el video.
-    #bgvid {
-        display: none;
-     }
-}
-
->>>>>>> 1f1f5533316b76bbb854ef508c82e3abeb949bb4
 #landing{
     background: url(img/landing.jpg) center center no-repeat;
     background-size: cover;
@@ -50,10 +33,9 @@ video#bgvid {
             width: 100%;
             background: url("img/logo-ciudad_abierta.png") center center no-repeat;
         }
-
     }
-
 }
+
 #section01{
     background: url(img/page01.jpg) -250px center/cover no-repeat;
     background-size: cover;
@@ -94,7 +76,6 @@ video#bgvid {
     }
 }
 
-<<<<<<< HEAD
 .avanzar {
     position: absolute;
     right: 0px;
@@ -113,12 +94,8 @@ video#bgvid {
 }
 
 
-.formaGrandeArriba{ 
-    border-left: 100px solid transparent;
-=======
 .formaGrandeArriba{
     border-left: 200px solid transparent;
->>>>>>> 1f1f5533316b76bbb854ef508c82e3abeb949bb4
     border-top: 100vh solid #fff;
     height: 100%;
     position: absolute;
@@ -128,13 +105,8 @@ video#bgvid {
     z-index: 0;
 }
 
-<<<<<<< HEAD
 .formaChicaArriba{ 
-    border-left: 100px solid transparent;
-=======
-.formaChicaArriba{
     border-left: 200px solid transparent;
->>>>>>> 1f1f5533316b76bbb854ef508c82e3abeb949bb4
     border-bottom: 100vh solid #fff;
     height: 100%;
     position: absolute;

@@ -1,50 +1,101 @@
-/*
-Error: Invalid CSS after "...00vh solid #fff": expected "{", was ";"
-        on line 122 of css/estilos.scss
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(onepage-scroll.css);
+@font-face {
+  font-family: "Gotham";
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/gotham.eot");
+  src: url("fonts/gotham.eot?#iefix") format("embedded-opentype"), url("fonts/gotham.woff") format("woff"), url("fonts/gotham.ttf") format("truetype"), url("fonts/gotham.svg#Gotham") format("svg"); }
+html,
+body {
+  width: 100%;
+  height: 100%; }
 
-117:     border-left: 100px solid transparent;
-118: =======
-119: .formaGrandeArriba{
-120:     border-left: 200px solid transparent;
-121: >>>>>>> 1f1f5533316b76bbb854ef508c82e3abeb949bb4
-122:     border-top: 100vh solid #fff;
-123:     height: 100%;
-124:     position: absolute;
-125:     right: 0;
-126:     top: 0;
-127:     width: 45%;
+#landing {
+  background: url(img/landing.jpg) center center no-repeat;
+  background-size: cover;
+  color: #FFFFFF; }
+  #landing .centro {
+    box-sizing: border-box;
+    z-index: 100; }
+    #landing .centro .logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      background: url("img/logo-ciudad_abierta.png") center center no-repeat; }
 
-Backtrace:
-css/estilos.scss:122
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:1167:in `expected'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:1096:in `tok!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:641:in `block'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:712:in `declaration_or_ruleset'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:661:in `block_child'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:642:in `block'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:712:in `declaration_or_ruleset'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:661:in `block_child'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:642:in `block'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:636:in `ruleset'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:660:in `block_child'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:117:in `stylesheet'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:42:in `parse'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:407:in `run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:63:in `process_result'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
-c:/Ruby193/bin/sass:23:in `load'
-c:/Ruby193/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...00vh solid #fff\": expected \"{\", was \";\"\A         on line 122 of css/estilos.scss\A \A 117:     border-left: 100px solid transparent;\A 118: =======\A 119: .formaGrandeArriba{\A 120:     border-left: 200px solid transparent;\A 121: >>>>>>> 1f1f5533316b76bbb854ef508c82e3abeb949bb4\A 122:     border-top: 100vh solid #fff;\A 123:     height: 100%;\A 124:     position: absolute;\A 125:     right: 0;\A 126:     top: 0;\A 127:     width: 45%;"; }
+#section01 {
+  background: url(img/page01.jpg) -250px center/cover no-repeat;
+  background-size: cover; }
+
+#section02 {
+  background: url(img/page02.jpg) center center no-repeat;
+  background-size: cover; }
+
+#section05 {
+  background: url(img/page05.jpg) center center no-repeat;
+  background-size: cover; }
+
+.headerLogos {
+  clear: both;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  z-index: 999; }
+  .headerLogos .izquierda {
+    float: left;
+    text-align: left;
+    padding: 30px;
+    width: 100px; }
+  .headerLogos .centro {
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    padding: 30px; }
+  .headerLogos .derecha {
+    float: right;
+    text-align: right;
+    padding: 30px;
+    width: 100px; }
+
+.avanzar {
+  position: absolute;
+  right: 0px;
+  margin: auto;
+  width: 63px;
+  background: url("img/arrow-down.png") no-repeat scroll center center transparent;
+  z-index: 999;
+  height: 63px;
+  left: 0px;
+  cursor: pointer;
+  bottom: 20px; }
+
+.avanzar:hover {
+  background: url("img/arrow-down.png") no-repeat scroll center center transparent;
+  background-size: 90%; }
+
+.formaGrandeArriba {
+  border-left: 200px solid transparent;
+  border-top: 100vh solid #fff;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  z-index: 0; }
+
+.formaChicaArriba {
+  border-left: 200px solid transparent;
+  border-bottom: 100vh solid #fff;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45%;
+  z-index: 0; }
+
+/*# sourceMappingURL=estilos.css.map */
