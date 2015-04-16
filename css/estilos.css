@@ -57,11 +57,28 @@ body {
     margin: auto;
     width: 100%;
     background: url("img/logo-ciudad_abierta-claim.svg") center center no-repeat;
-    background-size: 50%; }
+    background-size: 60%; }
+    @media (max-width: 767px) {
+      #landing .logo-baca {
+        display: block;
+        width: 309.6px;
+        height: 108px;
+        background-image: url("img/logo-ciudad_abierta-claim-mobile.png");
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: center center; } }
+  @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 767px) and (min-resolution: 125dpi), only screen and (max-width: 767px) and (min-resolution: 1.3dppx) {
+    #landing .logo-baca {
+      background-image: url("img/logo-ciudad_abierta-claim-mobile_2x.png");
+      background-size: 309.6px 108px; } }
+
     #landing .logo-baca h1, #landing .logo-baca h2 {
       text-indent: 100%;
       white-space: nowrap;
       overflow: hidden; }
+  #landing #constelacion {
+    width: 100%;
+    height: 100vh; }
 
 #section01 {
   background: url(img/page01.jpg) -250px center/cover no-repeat;
@@ -101,17 +118,60 @@ body {
     display: block;
     width: 172px;
     height: 34px;
-    background-image: url("img/logo-normal.png");
+    background-image: url("img/logo-ba.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center center;
-    text-indent: 100%;
+    text-indent: 200%;
     white-space: nowrap;
     overflow: hidden; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .headerLogos .logo-gcba a {
-        background-image: url("img/logo-normal_2x.png");
+        background-image: url("img/logo-ba_2x.png");
         background-size: 172px  34px; } }
+    @media (max-width: 767px) {
+      .headerLogos .logo-gcba a {
+        display: block;
+        width: 85px;
+        height: 35px;
+        background-image: url("img/logo-ba-mobile.png");
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: center center; } }
+  @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 767px) and (min-resolution: 125dpi), only screen and (max-width: 767px) and (min-resolution: 1.3dppx) {
+    .headerLogos .logo-gcba a {
+      background-image: url("img/logo-ba-mobile_2x.png");
+      background-size: 85px 35px; } }
+
+  .headerLogos .logo-gcba-invertido a {
+    display: block;
+    width: 172px;
+    height: 34px;
+    background-image: url("img/logo-ba-invertido.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      .headerLogos .logo-gcba-invertido a {
+        background-image: url("img/logo-ba-invertido_2x.png");
+        background-size: 172px  34px; } }
+    @media (max-width: 767px) {
+      .headerLogos .logo-gcba-invertido a {
+        display: block;
+        width: 85px;
+        height: 35px;
+        background-image: url("img/logo-ba-invertido-mobile.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center; } }
+  @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 767px) and (min-resolution: 125dpi), only screen and (max-width: 767px) and (min-resolution: 1.3dppx) {
+    .headerLogos .logo-gcba-invertido a {
+      background-image: url("img/logo-ba-invertido-mobile_2x.png");
+      background-size: 85px 35px; } }
+
   .headerLogos .logo-evoluciona {
     display: block;
     width: 125px;
@@ -127,6 +187,9 @@ body {
       .headerLogos .logo-evoluciona {
         background-image: url("img/logo-ba-evoluciona_2x.png");
         background-size: 125px 125px; } }
+    @media (max-width: 767px) {
+      .headerLogos .logo-evoluciona {
+        display: none; } }
 
 .avanzar {
   position: absolute;
