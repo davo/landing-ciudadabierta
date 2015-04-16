@@ -163,19 +163,33 @@ body {
 
 .contenidoCentrado{
     display: table;
+    height: 100%;
+    width: 100%;
+    .derecha{
+        text-align: right;
+    }       
+    .centro{
+        text-align: center;
+    }       
     .wrapper{
         height: 100%;
         width: 100%;
+        padding: 20px;        
         display: table-cell;
         vertical-align: middle;        
-        text-align: right;
+        .mitad{
+            margin-left: 20%;
+            width:80%;
+        }
+        li{
+            padding-bottom: 10px;
+        }
     }
 
 }
 
 .contenidoSlanted {
     clear: both;
-    cursor: pointer;
     height: 100vh;
     margin: auto;
     position: absolute;
@@ -206,4 +220,14 @@ body {
     bottom: 0;
     width: 45%;
     z-index: 0;
+}
+
+.textoAcordeon {
+    display:none;
+}
+
+.acordeon{
+    cursor:hand;
+    cursor:pointer;
+    margin-top: -20px;
 }
