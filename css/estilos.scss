@@ -31,8 +31,7 @@ body {
             right: 0;
             margin: auto;
             width: 100%;
-            @include retina-image(logo-ciudad_abierta, 806px 65px);
-            background: url("img/logo-ciudad_abierta.png") center center no-repeat;
+            background: url("img/logo-ciudad_abierta-claim.svg") center center no-repeat;
         }
     }
 }

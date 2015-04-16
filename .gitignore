@@ -2,3 +2,5 @@ public/
 node_modules/
 .sass-cache/
 desktop.ini
+css/estilos.min.css
+css/estilos.css
