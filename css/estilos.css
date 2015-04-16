@@ -42,7 +42,7 @@ video#bgvid {
       background: url("img/logo-ciudad_abierta.png") center center no-repeat; }
 
 #section01 {
-  background: url(img/page01.jpg) center center no-repeat;
+  background: url(img/page01.jpg) -250px center/cover no-repeat;
   background-size: cover; }
 
 #section02 {
@@ -75,7 +75,7 @@ video#bgvid {
     width: 100px; }
 
 .formaGrandeArriba {
-  border-left: 54px solid transparent;
+  border-left: 200px solid transparent;
   border-top: 100vh solid #fff;
   height: 100%;
   position: absolute;
@@ -85,7 +85,7 @@ video#bgvid {
   filter: drop-shadow; }
 
 .formaChicaArriba {
-  border-left: 54px solid transparent;
+  border-left: 200px solid transparent;
   border-bottom: 100vh solid #fff;
   height: 100%;
   position: absolute;
@@ -93,5 +93,3 @@ video#bgvid {
   bottom: 0;
   width: 45%;
   filter: drop-shadow; }
-
-/*# sourceMappingURL=estilos.css.map */
