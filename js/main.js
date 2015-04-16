@@ -79,3 +79,28 @@ particlesJS('constelacion', {
     },
     retina_detect: true
 });
+
+
+// Acordeon
+var divNum = new Array("tema1", "tema2", "tema3");
+
+function openClose(theID) {
+    for (var i = 0; i < divNum.length; i++) {
+        if (divNum[i] == theID) {
+            if (document.getElementById(divNum[i]).style.display == "block") {
+                document.getElementById(divNum[i]).style.display = "none"
+            } else {
+                document.getElementById(divNum[i]).style.display = "block"
+            }
+        } else {
+            document.getElementById(divNum[i]).style.display = "none";
+        }
+    }
+}
+
+// no la uso pero cierra el acordeón
+function closeAll() {
+ for(var i=0; i < divNum.length; i++) {
+   document.getElementById(divNum[i]).style.display = "none";
+ }
+}

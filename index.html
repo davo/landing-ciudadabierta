@@ -11,13 +11,14 @@
     <script src="libs/jquery.onepage-scroll.min.js" charset="utf-8"></script>
     <script src="libs/particles.min.js"></script>
     <!--[if lt IE 9]>
-        <script src="lib/html5shiv.min.js"></script>
+        <script src="lib/html5shiv.min.js">/*dinos*/</script>
     <![endif]-->
 </head>
 
 <body>
     <div class="main">
 
+<!-- landing -->
         <section id="landing">
             <div class="headerLogos">
                 <div class="izquierda logo-gcba-invertido"><a href="http://www.buenosaires.gob.ar/" target="_blank">Buenos Aires Ciudad</a></div>
@@ -35,51 +36,137 @@
             <div class="avanzar"></div>
         </section>
 
+<!-- copy -->
         <section id="section01">
             <div class="headerLogos">
                 <div class="izquierda logo-gcba-invertido"><a href="http://www.buenosaires.gob.ar/" target="_blank">Buenos Aires Ciudad</a></div>
                 <div class="derecha claim"><h3>En todo estás vos.</h3></div>
             </div>
+
             <div class="formaChicaArriba">
-                <div class="contenidoSlanted">Contenido Section 1</div>
+            </div>
+            <div class="contenidoSlanted contenidoCentrado">
+                <div class="wrapper derecha">
+                    <div class="mitad">
+                        Una gran maratón de innovación y colaboración pública que busca
+                        conectar equipos, inspirar ideas y acelerar proyectos que generen
+                        nuevas soluciones para la Ciudad.
+                    </div>
+                </div>
             </div>
             <div class="avanzar"></div>
         </section>
 
+<!-- quienes, como, desafios -->
         <section id="section02">
             <div class="headerLogos">
                 <div class="izquierda"> LOGO </div>
                 <div class="derecha"> LOGO </div>
             </div>
 
-            <div class="formaGrandeArriba">
-                <div class="contenidoSlanted">Contenido Section 2</div>
+            <div class="formaGrandeArriba"></div>
+            <div class="contenidoSlanted contenidoCentrado">
+                <div class="wrapper derecha">
+                    <div class="mitad">
+
+                         <div class="acordeon" onClick="openClose('tema1')"><h1>¿Quiénes pueden participar?</h1></div>
+                         <div id="tema1" class="textoAcordeon">
+                            ¡Todos! Estudiantes, desarrolladores, ONGs, equipos de Gobierno, emprendedores, profesionales, en distintas áreas, empresas y todos aquellos con inquietudes y vocación de participar.
+                         </div>
+
+                         <div class="acordeon" onClick="openClose('tema2')"><h1>¿Cómo funciona?</h1></div>
+                         <div id="tema2" class="textoAcordeon">
+                            Que se yo como funciona
+                         </div>
+
+                         <div class="acordeon" onClick="openClose('tema3')"><h1>¿Cuáles son los desafíos?</h1></div>
+                         <div id="tema3" class="textoAcordeon">
+                            =( ^_^ )=
+                         </div>
+
+                    </div>
+                </div>
             </div>
 
             <div class="avanzar"></div>
         </section>
 
+<!-- fechas, lugares -->
         <section id="section03">
             <div class="headerLogos">
                 <div class="centro"> LOGO </div>
             </div>
-            <div class="avanzar"></div>
-        </section>
+            <div class="contenidoCentrado">
+                <div class="wrapper centro">
+                    <div class="fechas">
+                        <div class="izquierda">
+                            <div class="circulo camp">BA CAMP</div>
+                            <p class="fecha">15 de Mayo</p>
+                            <p class="lugar">Centro Cultural San Martín</p>
+                            <p class="bajada">Desconferencia para conectar personas, desarrollar ideas innovadoras e inspirarte en la Ciudad que te rodea.</p>
+                        </div>
 
-        <section id="section04">
-            <div class="headerLogos">
-                <div class="izquierda"> LOGO </div>
+                        <div class="derecha">
+                            <div class="circulo hack">BA HACKATON</div>
+                            <p class="fecha">13 y 14 de Junio</p>
+                            <p class="lugar">Auditorio Buenos Aires</p>
+                            <p class="bajada">Dos días en donde estudiantes, emprendedores, ONGs y equipos de gobierno se juntan para prototipar y diseñar soluciones para la Ciudad.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="avanzar"></div>
         </section>
 
+<!-- registro -->
+        <section id="section04">
+            <div class="headerLogos">
+                <div class="izquierda"> LOGO </div>
+            </div>
+            <div class="contenidoCentrado">
+                <div class="wrapper centro">
+
+                    <img src="bigimage.png">
+                    <p class="bajada">Una desconferencia, charlas y debates para conectar personas, desarrollar ideas innovadoras e inspirarte en la Ciudad que te rodea.</p>
+                    <div class="tablita">
+                        <div class="celdita"><h1>Inspirate</h1><p>Conocé los temas y los oradores invitados.</p></div>
+                        <div class="celdita"><h1>Proponé</h1><p>Prepará tu charla y presentá tus ideas y proyectos a la comunidad.</p></div>
+                        <div class="celdita"><h1>Debatí</h1><p>Participá de las mesas de desafíos para convertir las ideas en proyectos.</p></div>
+                    </div>
+
+
+
+                    <a href="#" class="registrate">Registrate Ahora</a>
+
+
+                </div>
+            </div>
+            <div class="avanzar"></div>
+        </section>
+
+<!-- como funciona un camp -->
         <section id="section05">
             <div class="headerLogos">
                 <div class="izquierda"> LOGO </div>
                 <div class="derecha"> LOGO </div>
             </div>
-            <div class="formaChicaArriba">
-                <div class="contenidoSlanted">Contenido Section 5</div>
+            <div class="formaChicaArriba"></div>
+            <div class="contenidoSlanted contenidoCentrado">
+                <div class="wrapper derecha">
+                    <div class="mitad">
+                        <h1>¿Cómo funciona un camp?</h1>
+                        <p>BA Camp te da la posibilidad de elegir la forma en la que querés participar.</p>
+
+                        <p>Si vas a asistir como orador:</p>
+
+                        <ul>
+                            <li>Pensá un tema.
+                            <li>Tené siempre en cuenta que la charla debe ser útil para quien la escucha, se debe sentir inspirado, identificado o interesado por tu propuesta.
+                            <li>Para quien la escucha, se debe sentir inspirado, identificado o interesado por tu propuesta.
+                            <li>Debe ser útil para quien la escucha, se debe sentir inspirado, identificado o interesado por tu propuesta.
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
