@@ -340,7 +340,13 @@ html, body {
   position: absolute;
   text-align: center;
   width: 100%;
-  z-index: 999; }
+  z-index: 999;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 #cat {
   position: absolute;
