@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="805px" height="117px" viewBox="0 0 805 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="805px" height="120px" viewBox="0 0 805 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
     <title>logo-ciudad_abierta-claim</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
     <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="logo-ciudad_abierta-claim" sketch:type="MSLayerGroup" fill="#FFFFFF">
-            <g id="logo-ciudad_abierta-copy" sketch:type="MSShapeGroup">
+        <g id="logo-ciudad_abierta-claim" sketch:type="MSLayerGroup">
+            <g id="logo-ciudad_abierta-copy" fill="#FFFFFF" sketch:type="MSShapeGroup">
                 <path d="M49.2040167,63.2192832 C48.4719475,63.9961839 47.2850986,63.9961839 46.5530294,63.2192832 C46.186679,62.8294888 46.0047671,62.3193957 46.0047671,61.8126629 L46.0047671,54.3514595 C46.0047671,53.4273778 45.30049,52.6780316 44.4250389,52.6780316 C44.152171,52.6780316 43.8881461,52.7533022 43.6626511,52.88637 C43.3221979,53.1088217 42.9729017,53.3144718 42.6097095,53.5026485 L41.224526,54.2177197 C37.5862876,55.885099 33.5684343,56.8058204 29.3516149,56.8058204 L7.50639333,56.8058204 C3.35968581,56.8058204 0,53.2291203 0,48.8170504 L0,8.81674721 C0,4.40467728 3.35968581,0.828649235 7.50639333,0.828649235 L27.7156709,0.828649235 C32.135878,0.828649235 36.2996397,1.98526345 39.9618804,4.02832402 L39.9618804,4.02496372 C44.106693,6.31130978 46.9408555,10.9149166 46.9408555,16.2235138 C46.9408555,20.8062868 44.8324458,24.8655256 41.5832968,27.3608821 C44.8596063,28.7191141 47.5131201,31.4093679 48.9513612,34.804612 L63.0185849,5.90404179 C64.6703199,2.40261234 68.0685356,0 72.0011177,0 C75.9305415,0 79.3338104,2.40261234 80.9842821,5.90404179 L80.979229,5.90740209 L100.175358,45.3431753 L100.178516,45.3431753 C100.796259,46.4997896 101.146818,47.8418922 101.146818,49.2727066 C101.146818,53.6807442 97.7883959,57.2574443 93.6416884,57.2574443 C90.5971902,57.2574443 87.9803114,55.3340103 86.7966207,52.5610933 C86.1883527,51.0449273 84.7734822,49.9770249 83.1198523,49.9770249 L62.3010434,49.9770249 C61.8986896,49.9770249 61.4969675,50.1383191 61.1912544,50.4669562 L49.2040167,63.2192832" id="Imported-Layers"></path>
                 <g id="Ciudad" transform="translate(135.508650, 8.813571)">
                     <path d="M0.0248529949,23.4042846 L0.0248529949,23.2779374 C0.0248529949,10.7043782 8.93222078,0.40574004 21.7001638,0.40574004 C27.9357002,0.40574004 32.151888,2.17392831 35.596845,4.89106445 C36.5461979,5.64914744 37.3774343,7.03963833 37.3774343,8.74532508 C37.3774343,11.3992876 35.3587173,13.4840159 32.8643764,13.4840159 C31.6175217,13.4840159 30.7862853,12.9792993 30.133171,12.5370842 C27.5794561,10.5148575 24.9076247,9.37773297 21.6407898,9.37773297 C14.6333909,9.37773297 9.58596675,15.5694162 9.58596675,23.1522623 L9.58596675,23.2779374 C9.58596675,30.8601115 14.5152745,37.178814 21.6407898,37.178814 C25.5007334,37.178814 28.0550799,35.9153423 30.6675373,33.7029228 C31.3800256,33.071187 32.3300101,32.6296439 33.3987426,32.6296439 C35.7155931,32.6296439 37.6749361,34.6511986 37.6749361,37.1156404 C37.6749361,38.6318064 36.9624477,39.8327765 36.1305797,40.5908595 C32.3893841,44.0660787 27.9950743,46.1508069 21.3439196,46.1508069 C9.11034287,46.1508069 0.0248529949,36.104191 0.0248529949,23.4042846" id="Fill-1"></path>
@@ -32,8 +42,8 @@
                     <path d="M212.354743,9.94629522 C214.804237,9.94629522 216.808427,7.97044059 216.808427,5.55505913 C216.808427,3.13967766 214.804237,1.16382304 212.354743,1.16382304 L203.293887,1.16382304 C200.844392,1.16382304 198.840203,3.13967766 198.840203,5.55505913 C198.840203,7.97044059 200.844392,9.94629522 203.293887,9.94629522 L212.354743,9.94629522" id="Fill-17"></path>
                 </g>
             </g>
-            <text id="Claim-Copy" sketch:type="MSTextLayer" font-family="Gotham Rounded" font-size="17" font-weight="bold" sketch:alignment="middle">
-                <tspan x="238.610781" y="116">MARATÓN DE INNOVACIÓN PÚBLICA</tspan>
+            <text id="Claim" fill="white" filter="url(#filter-1)" sketch:type="MSTextLayer" font-family="Gotham Rounded" font-size="17" font-weight="bold" sketch:alignment="middle">
+                <tspan x="238.610781" y="116" fill="#FFFFFF">MARATÓN DE INNOVACIÓN PÚBLICA</tspan>
             </text>
         </g>
     </g>

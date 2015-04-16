@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 @import "../public/components/bourbon/dist/_bourbon.scss";
+@import "mixins/breakpoint.scss";
+@import "animate.min.css";
 @import "onepage-scroll.css";
 @include font-face('Gotham', 'fonts/gotham');
 //tamaños de dispositivos
@@ -11,6 +13,17 @@ $fontset-openSans: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif !d
 
 html,
 body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-backface-visibility: hidden;
+    moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
     width: 100%;
     height: 100%;
 }
@@ -20,18 +33,45 @@ body {
     background: url(img/landing.jpg) center center no-repeat;
     background-size: cover;
     color: #FFFFFF;
+    @include breakpoint(xs) {
+      border-bottom: 15px solid #F17E2A;
+    }
+    @include breakpoint(sm) {
+      border-bottom: 15px solid #CC4A59;
+    }
+    @include breakpoint(md) {
+      border-bottom: 15px solid #772626;
+    }
+    @include breakpoint(lg) {
+      border-bottom: 15px solid #30013F;
+    }
+    @media (max-height:700px) {
+      border-bottom: 15px solid red;
+    }
+    @media (max-height:815px) {
+        border-bottom: 15px solid yellow;
+    }
     .centro {
         box-sizing: border-box;
         z-index: 100;
-        .logo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            width: 100%;
-            background: url("img/logo-ciudad_abierta-claim.svg") center center no-repeat;
+    }
+    .logo-baca {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        background: url("img/logo-ciudad_abierta-claim.svg") center center no-repeat;
+        background-size: 50%;
+        h1, h2 {
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        @include breakpoint(xs) {
+
         }
     }
 }
@@ -59,20 +99,45 @@ body {
     .izquierda {
         float: left;
         text-align: left;
-        padding: 30px;
-        width: 100px;
+        margin: 20px;
+        width: 33%;
     }
     .centro {
         margin: 0 auto;
-        width: 100px;
+        width: 33%;
+        height: 125px;
         text-align: center;
-        padding: 30px;
+        margin: 20px;
     }
     .derecha {
         float: right;
         text-align: right;
-        padding: 30px;
-        width: 100px;
+        margin: 20px;
+        width: 33%;
+    }
+    .logo-gcba a {
+        display: block;
+        width: 172px;
+        height: 34px;
+        @include retina-image("img/logo-normal", 172px 34px);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .logo-evoluciona {
+        display: block;
+        width: 125px;
+        height: 125px;
+        @include retina-image("img/logo-ba-evoluciona", 125px 125px);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: top right;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
 
