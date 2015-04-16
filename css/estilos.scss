@@ -87,10 +87,25 @@ body {
     left: 0px;
     cursor: pointer;
     bottom: 20px;
+    z-index: 999;
 }
+
 .avanzar:hover {
     background: url("img/arrow-down.png") no-repeat scroll center center transparent;
-    background-size: 90%;
+    background-size: 150%;
+}
+
+.contenidoSlanted {
+    position: absolute;
+    right: 0px;
+    margin: auto;
+    width: 63px;
+    z-index: 999;
+    height: 63px;
+    left: 0px;
+    cursor: pointer;
+    bottom: 20px;
+    z-index: 800;
 }
 
 
