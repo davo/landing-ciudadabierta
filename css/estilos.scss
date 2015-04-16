@@ -16,20 +16,6 @@ body {
 }
 
 
-video#bgvid {
-    right: 0; bottom: 0; 
-    min-width: 100%; min-height: 100%;
-    width: auto; height: 100%;
-    background: url(../video/video.jpg) center center no-repeat;
-    background-size: cover;
-}
-
-@media screen and (max-device-width: 800px) { //los dispositivos moviles no funcan bien con el video.
-    #bgvid {
-        display: none;
-     }
-}
-
 #landing{
     background: url(img/landing.jpg) center center no-repeat;     
     background-size: cover;
@@ -70,6 +56,7 @@ video#bgvid {
     text-align: center;
     width: 100%;
     position: absolute;
+    z-index: 999;
     .izquierda {
         float: left;
         text-align: left;
@@ -90,24 +77,42 @@ video#bgvid {
     }
 }
 
+.avanzar {
+    position: absolute;
+    right: 0px;
+    margin: auto;
+    width: 63px;
+    background: url("img/arrow-down.png") no-repeat scroll center center transparent;
+    z-index: 999;
+    height: 63px;
+    left: 0px;
+    cursor: pointer;
+    bottom: 20px;
+}
+.avanzar:hover {
+    background: url("img/arrow-down.png") no-repeat scroll center center transparent;
+    background-size: 90%;
+}
+
+
 .formaGrandeArriba{ 
-    border-left: 54px solid transparent;
+    border-left: 100px solid transparent;
     border-top: 100vh solid #fff;
     height: 100%;
     position: absolute;
     right: 0;
     top: 0;
     width: 45%;
-    filter: drop-shadow;
+    z-index: 0;
 }
 
 .formaChicaArriba{ 
-    border-left: 54px solid transparent;
+    border-left: 100px solid transparent;
     border-bottom: 100vh solid #fff;
     height: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
     width: 45%;
-    filter: drop-shadow;
+    z-index: 0;
 }
