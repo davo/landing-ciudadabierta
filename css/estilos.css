@@ -1,13 +1,19 @@
 @charset "UTF-8";
 @import url(animate.min.css);
 @import url(onepage-scroll.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,700);
 @font-face {
   font-family: 'Gotham';
   font-weight: normal;
   font-style: normal;
   src: url('fonts/gotham.eot');
   src: url('fonts/gotham.eot?#iefix') format('embedded-opentype'), url('fonts/gotham.woff') format('woff'), url('fonts/gotham.ttf') format('truetype'), url('fonts/gotham.svg#Gotham') format('svg'); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+  src: url('fonts/OpenSans.eot');
+  src: url('fonts/OpenSans.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans.woff') format('woff'), url('fonts/OpenSans.ttf') format('truetype'), url('fonts/OpenSans.svg#Open Sans') format('svg'); }
 
 html, body {
   -webkit-font-smoothing: antialiased;
@@ -40,24 +46,6 @@ h3 {
   background: url(img/landing.jpg) center center no-repeat;
   background-size: cover;
   color: #FFFFFF; }
-  @media (max-width: 767px) {
-    #landing {
-      border-bottom: 15px solid #F17E2A; } }
-  @media (min-width: 768px) {
-    #landing {
-      border-bottom: 15px solid #CC4A59; } }
-  @media (min-width: 992px) {
-    #landing {
-      border-bottom: 15px solid #772626; } }
-  @media (min-width: 1200px) {
-    #landing {
-      border-bottom: 15px solid #30013F; } }
-  @media (max-height: 700px) {
-    #landing {
-      border-bottom: 15px solid red; } }
-  @media (max-height: 815px) {
-    #landing {
-      border-bottom: 15px solid yellow; } }
   #landing .centro {
     box-sizing: border-box;
     z-index: 100; }
@@ -306,6 +294,9 @@ h3 {
   top: 0;
   width: 45%;
   z-index: 800; }
+  @media (max-width: 767px) {
+    .contenidoSlanted {
+      width: 100%; } }
 
 .formaGrandeArriba {
   border-left: 200px solid transparent;
@@ -316,6 +307,10 @@ h3 {
   top: 0;
   width: 45%;
   z-index: 0; }
+  @media (max-width: 767px) {
+    .formaGrandeArriba {
+      width: 100%;
+      border-top: 0vh solid #fff; } }
 
 .formaChicaArriba {
   border-left: 200px solid transparent;
@@ -326,6 +321,9 @@ h3 {
   bottom: 0;
   width: 45%;
   z-index: 0; }
+  @media (max-width: 767px) {
+    .formaChicaArriba {
+      width: 100%; } }
 
 .textoAcordeon {
   display: none; }
@@ -436,6 +434,10 @@ h3 {
   .tablita .celdita {
     display: inline-block;
     width: 30%; }
+    @media (max-width: 767px) {
+      .tablita .celdita {
+        display: table-cell;
+        width: 100%; } }
 
 #footer {
   background: url("img/logo-ba-invertido.png") center center no-repeat;
