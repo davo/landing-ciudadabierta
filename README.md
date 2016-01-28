@@ -23,8 +23,8 @@ $ grunt watch
 
 ###### Referentes del Laboratorio de Gobierno
 
-- David Galavotti ( Proyect Manager )
-- Nicolás Lound ( Frontend )
+- David Galavotti (Direction & design)
+- Nicolás Lound (Frontend dev)
 
 ###Licencia
 
